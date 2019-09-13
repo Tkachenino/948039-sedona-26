@@ -5,27 +5,23 @@
     <title>Седона - город мечты</title>
   </head>
   <body>
-
     <header>
       <nav>
         <a><img src="img/logo-sedona.svg" width="140" height="72" alt="Город Седона"></a>
         <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <li><a href="#" aria-label="Информация о городе Седона">Информация</a></li>
+          <li><a href="#" aria-label="Фото и видео картотека о городе Седона">Фото и видео</a></li>
+          <li><a href="#" aria-label="Карта штата Аризона">Карта штата</a></li>
+          <li><a href="catalog.html" aria-label="Каталог жилья в городе Седона">Гостиницы</a></li>
         </ul>
       </nav>
      </header>
-
      <main>
-
-       <h1>О городе Седона, штат Аризона</h1>
+       <h1 class="visually-hidden">О городе Седона, штат Аризона</h1>
        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-
        <section>
-       <h2>Преимущества Седона, как туристического городка</h2>
+       <h2 class="visually-hidden">Преимущества Седона, как туристического городка</h2>
          <ul>
            <li>
              <h3>Настоящий городок</h3>
@@ -66,28 +62,56 @@
            </li>
           </ul>
        </section>
-
        <section>
-         <h2>Поиск отеля</h2>
+         <h2 class="visually-hidden">Поиск отеля</h2>
          <p>Заинтересовались?</p>
          <p>Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
-         <!--Место для формы-->
+         <a href="#" aria-label="Поиск гостиницы в городе Седона">Поиск гостиницы в Седоне</a>
+         <form method="post" action="#">
+           <fieldset>
+             <legend class="visually-hidden">Выбор даты и количество гостей</legend>
+             <div>
+               <label for="data-arrival">Дата заезда:</label>
+               <input type="text" name="data-arrival" id="data-arrival" value="24 апреля 2017">
+             </div>
+             <div>
+               <label for="data-depart">Дата выезда:</label>
+               <input type="text" name="data-depart" id="data-depart" value="4 июля 2017">
+             </div>
+             <div>
+               <label for="amount-adult">Взрослые:</label>
+               <button type="button" aria-label="Убрать гостя">-</button>
+               <input type="number" name="amount-adult" id="amount-adult" value="2">
+               <button type="button" aria-label="Добавить гостя">+</button>
+               <label for="amount-child">Дети:</label>
+               <button type="button" aria-label="Убрать ребенка">-</button>
+               <input type="number" name="amount-child" id="amount-child" value="0">
+               <button type="button" aria-label="Добавить ребенка">+</button>
+             </div>
+             <div>
+               <button type="submit" aria-label="Найти подходящие варианты отелей по вашему запросу">Найти</button>
+             </div>
+           </fieldset>
+         </form>
          <div>
-           <img src="img/map.png" width="1718" height="748" alt="Город Седона на карте, штат Аризона">
-         </div>
-         <a href="#">Поиск гостиницы в Седоне</a>
+         <img src="img/map.png" width="1718" height="748" alt="Город Седона на карте, штат Аризона">
+       </div>
        </section>
      </main>
-
      <footer>
        <p>#VISITSEDONA</p>
         <ul>
-          <li><a href="https://twitter.com">twitter.com</a></li>
-          <li><a href="https://facebook.com">facebook.com</a></li>
-          <li><a href="https://youtube.com">youtube.com</a></li>
+          <li><a href="https://twitter.com" aria-label="Официальный блог города Седона в Твиттере">
+            twitter.com</a></li>
+          <li><a href="https://facebook.com"  aria-label="Официальная страничка города Седона в Фэйсбуке">
+            facebook.com</a></li>
+          <li><a href="https://youtube.com" aria-label="Официальный канал о городе Седона на Ютубе">
+            youtube.com</a></li>
         </ul>
-       <a href="https://htmlacademy.ru/intensive/htmlcss">website by<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML ACADEMY"></a>
+       <a href="https://htmlacademy.ru/intensive/htmlcss"
+          aria-label="страница студии разработки HTML Academy">
+         website by<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="студия разработки HTML ACADEMY"></a>
      </footer>
   </body>
 </html>
