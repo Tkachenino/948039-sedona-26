@@ -39,8 +39,10 @@
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки(р):</legend>
-            <input type="number" name="lowest-cost" placeholder="от 0" aria-label="Выбор нижней границы цены">
-            <input type="number" name="biggest-cost" placeholder="до 3000" aria-label="Выбор верхней границы цены">
+            <label for="lowest-cost">от</label>
+            <input type="number" name="lowest-cost" id="lowest-cost" value="0" aria-label="Выбор нижней границы цены">
+            <label for="biggest-cost">до</label>
+            <input type="number" name="biggest-cost" id="biggest-cost" value="3000" aria-label="Выбор верхней границы цены">
             <!--<input type="range" min="0" max="5000" step="1" name="cost">-->
           </fieldset>
           <button type="submit">Найти</button>
