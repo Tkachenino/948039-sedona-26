@@ -22,13 +22,7 @@ li {
 
 .nav a {
   font-weight: bold;
-  color:#000000;
-}
-
-.nav a.active-page,
-.nav a.active-page:hover,
-.nav a.active-page:active {
-  color: #766357;
+  color: #000000;
 }
 
 .nav a:hover {
@@ -37,6 +31,12 @@ li {
 
 .nav a:active {
   color: #cacaca;
+}
+
+a.active-page,
+a.active-page:hover,
+a.active-page:active {
+  color: #766357;
 }
 
 .intro {
@@ -69,31 +69,30 @@ text-align: center;
   text-align: center;
 }
 
-.advantage li.blue-bg {
+li.blue-bg {
   background-color: #81b3d2;
 }
 
-.advantage li.gray-bg {
+li.gray-bg {
   background-color: #eeeeee;
 }
 
-li.blue-bg p,
-.blue-bg h3 {
+.blue-bg {
    color:#ffffff;
 }
 
-.advantage p,
-.advantage h3 {
+.advantage {
+  text-align: center;
   line-height: 21px;
 }
 
-.popup p.head {
-  font-size: 30px;
-  line-height: 36px;
+.popup {
+  line-height: 24px;
 }
 
-.popup p {
-  line-height: 24px;
+.head {
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .popup a {
@@ -110,7 +109,7 @@ li.blue-bg p,
 }
 
 .popup a:active {
-  color: #928a85;
+  color: rgba(255,255,255,0.3);
 
   background-color: #503e33;
 }
@@ -118,7 +117,7 @@ li.blue-bg p,
 .popup label {
   font-weight: bold;
 }
-.popup input[value] {
+.popup input {
   font-weight: bold;
 }
 .popup input[type="text"] {
@@ -141,28 +140,26 @@ li.blue-bg p,
   background-color: #f2f2f2;
 }
 
-.popup button {
+button.popup-button {
    color: #a9a9a9;
    font-weight: bold;
 }
 
-button.popup-button svg {
+button.popup-button {
   fill: #cacaca;
 }
 
-button.popup-button:hover,
-button.popup-button:hover  svg{
+button.popup-button:hover {
   fill: #000000;
   color: #000000;
 }
 
-button.popup-button:active,
-button.popup-button:active  svg{
+button.popup-button:active {
   fill: #81b3d2;
   color: #81b3d2;
 }
 
-.search button {
+button.search {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -173,42 +170,42 @@ button.popup-button:active  svg{
   background-color: #81b3d2;
 }
 
-.search button:hover {
+button.search:hover {
   border: 2px solid #669ec0;
   background-color: #669ec0;
 }
 
-.search button:active {
-  color: #94b9d2;
+button.search:active {
+  color: rgba(255,255,255,0.3);
 
   border: 2px solid #5496bd;
   background-color: #5496bd;
 }
 
- a.icon {
+.icon {
   background-color: #81b3d2;
   fill: #ffffff;
 }
 
-a.icon:hover svg {
+.icon:hover svg {
   background-color: #669ec0;
   fill: #ffffff;
 }
 
-a.icon:active svg {
+.icon:active svg {
   background-color: #5496bd;
   fill: #81b3d2;
 }
 
-.master-page p {
+.logo-html {
   color: #000000;
 }
 
-a.logo-html:hover svg{
+.logo-html:hover svg{
   fill: #81b3d2;
 }
 
-a.logo-html:active svg {
+.logo-html:active svg {
   fill: #bdbbbc;
 }
 /* Стилизация старинцы каталога*/
@@ -230,16 +227,18 @@ a.logo-html:active svg {
   color: #ffffff;
   font-weight: normal;
 }
-.form-area input[value] {
+
+.form-area input {
   color: #ffffff;
   line-height: 21px;
 }
+
 .form-area input[type="number"] {
-  color: #ffffff;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
+
 .form-area button {
   color: #ffffff;
   line-height: 21px;
@@ -248,6 +247,12 @@ a.logo-html:active svg {
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+}
+
+.form-area button:hover {
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
 .subfilter p {
@@ -274,17 +279,18 @@ a.logo-html:active svg {
   color: #81b3d2;
 }
 
-.subfilter a.active-subfilter,
-.subfilter a.active-subfilter:hover,
-.subfilter a.active-subfilter:active {
-  color: #81b3d2;
-  border-bottom: none;
-}
-
 .subfilter a:active {
   color: #000000;
   border-bottom: none;
 }
+a.active-subfilter,
+a.active-subfilter:hover,
+a.active-subfilter:active {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+
 .arrow svg {
   fill: #cacaca;
 }
@@ -297,10 +303,10 @@ a.logo-html:active svg {
   fill: #81b3d2;
 }
 
-.arrow.active-arrow svg {
+.active-arrow svg {
   fill: #81b3d2;
 }
-a.about-item {
+.about-item {
   line-height: 21px;
   font-weight: bold;
   color: #ffffff;
@@ -308,26 +314,26 @@ a.about-item {
   background-color: #81b3d2;
 }
 
-a.about-item:hover {
+.about-item:hover {
   background-color: #669ec0;
 }
 
-a.about-item:active {
-  color: #94b9d2;
+.about-item:active {
+  color: rgba(255,255,255,0.3);
 
   background-color: #5496bd;
 }
 
-h3 a{
+.about-name{
   color: #000000;
   font-size: 21px;
 }
 
-h3 a:hover {
+.about-name:hover {
   color: #81b3d2;
 }
 
-h3 a:active {
+.about-name:active {
   color: #cacaca;
 }
 
@@ -336,11 +342,12 @@ h3 a:active {
   line-height: 21px;
 }
 
-.result .rating {
+.rating {
   color: #666666;
   background-color: #f2f2f2;
 }
-.button-reserve button {
+
+button.button-reserve{
   line-height: 21px;
   font-weight: bold;
   color: #ffffff;
@@ -350,12 +357,12 @@ h3 a:active {
   border: 2px solid #766357;
 }
 
-.button-reserve button:hover {
+button.button-reserve:hover {
   background-color: #604e43;
   border: 2px solid #604e43;
 }
 
-.button-reserve button:active {
+button.button-reserve:active {
   color: #928a85;
 
   background-color: #503e33;
