@@ -41,7 +41,8 @@ a.active-page:active {
 
   background-color: #966b58;
   background-image: url("../img/bg.jpg");
-  background-position: top center;
+  background-position-x: center;
+  background-position-y: -56px;
   background-repeat: no-repeat;
 }
 .intro-welcome {
@@ -59,14 +60,26 @@ text-align: center;
 
   text-align: center;
 }
-li.blue-bg {
+.blue-bg {
   background-color: #81b3d2;
 }
-li.gray-bg {
+.gray-bg {
   background-color: #eeeeee;
 }
 .blue-bg {
    color:#ffffff;
+}
+.mini-bg {
+  background-color: #81b3d2;
+  background-position-y: -78px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.mini-bg1 {
+  background-image: url("../img/mini-bg1.jpg");
+}
+.mini-bg2 {
+  background-image: url("../img/mini-bg2.jpg");
 }
 .advantage {
   text-align: center;
@@ -99,6 +112,7 @@ li.gray-bg {
   font-weight: bold;
 }
 .popup input {
+  font-weight: bold;
   border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
 }
@@ -320,6 +334,7 @@ body {
   min-height: 2726px;
 }
 .header {
+  background-color: #ffffff;
   min-width: 1200px;
   min-height: 56px;
 }
@@ -344,4 +359,90 @@ body {
 }
 .nav-left {
   order: -1;
+}
+.intro {
+  width: 1200px;
+  min-height: 506px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro-text {
+  width: 1200px;
+  min-height: 216px;
+  margin: 0 auto;
+}
+.advantage {
+  width: 1200px;
+  min-height: 1098px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 56px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.info-block {
+  width: 400px;
+  min-height: 256px;
+}
+.info-city {
+  width: 400px;
+  min-height: 330px;
+}
+.mini-bg {
+  width: 800px;
+  height: 256px;
+}
+.search-info {
+  width: 636px;
+  min-width: 146px;
+  margin: 0 auto;
+}
+.search-switch {
+  margin: 0 auto;
+  width: 568px;
+  min-height: 86px;
+  background-color: #766357;
+}
+.popup-form {
+  width: 568px;
+  min-height: 395px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.search {
+  width: 458px;
+  min-height: 58px;
+}
+.map {
+  width: 1200px;
+  min-height: auto;
+  margin: 0 auto;
+}
+.footer {
+  min-width: 1200px;
+  min-height: 120px;
+}
+.conteiner {
+  width: 1200px;
+  background-color: rgba(255,255,255,0.9);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.social {
+  display: flex;
+}
+.icon {
+  display: block;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+}
+.last-icon {
+  margin-right: 0;
 }
