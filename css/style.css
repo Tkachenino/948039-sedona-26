@@ -328,37 +328,51 @@ button.button-reserve:active {
   overflow: hidden;
 }
 /*Сетка сайта*/
-html,
-body {
-  min-width: 1200px;
-  min-height: 2726px;
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
 }
 .header {
   background-color: #ffffff;
-  min-width: 1200px;
-  min-height: 56px;
 }
 .nav {
-  width: 1200px;
-  height: 56px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .site-nav {
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
 }
-.site-nav li {
-  display: block;
-  width: 239px;
-  min-height: 56px;
-  vertical-align: middle;
+.info-link {
+  padding-top: 15px;
+  padding-right: 74px;
+  padding-left: 72px;
+  padding-bottom: 15px;
 }
-.nav-left {
-  order: -1;
+.photo-link {
+  padding-top: 15px;
+  padding-right: 74px;
+  padding-left: 72px;
+  padding-bottom: 15px;
+  margin-right: 244px;
+}
+.map-link {
+  padding-top: 15px;
+  padding-right: 74px;
+  padding-left: 75px;
+  padding-bottom: 15px;
+}
+.host-link {
+  padding-top: 15px;
+  padding-right: 72px;
+  padding-left: 72px;
+  padding-bottom: 15px;
+  text-align: left;
 }
 .intro {
   width: 1200px;
@@ -427,13 +441,6 @@ body {
   min-width: 1200px;
   min-height: 120px;
 }
-.conteiner {
-  width: 1200px;
-  background-color: rgba(255,255,255,0.9);
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-}
 .social {
   display: flex;
 }
@@ -477,12 +484,10 @@ body {
   min-height: 450px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
 }
 .list-item{
   width:1200px;
   min-height: 150px;
-  margin: 0 auto;
   display: flex;
 }
 
