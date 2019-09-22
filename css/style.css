@@ -446,3 +446,46 @@ body {
 .last-icon {
   margin-right: 0;
 }
+/* сетка вторая страница*/
+.form-area {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 217px;
+  display: flex;
+}
+.subfilter {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 87px;
+  display: flex;
+}
+.sort {
+  display: flex;
+}
+.subfilter p {
+  margin-left: 72px;
+}
+.sort-item{
+  margin-right: 34px;
+}
+.arrow-section {
+  margin-left: auto;
+  margin-right:  72px;
+}
+.result {
+  width: 1200px;
+  min-height: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-item{
+  width:1200px;
+  min-height: 150px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.image{
+  margin-left: 72px;
+}

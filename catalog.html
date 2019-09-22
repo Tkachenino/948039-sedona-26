@@ -57,12 +57,12 @@
         <h2 class="visually-hidden">Сортировка полученых результатов</h2>
         <p>Найдено: 3</p>
           <h3>Сортировка:</h3>
-          <ul>
-            <li><a class="active-subfilter" href="#">по цене</a></li>
-            <li><a href="#">по типу</a></li>
-            <li><a href="#">по рейтингу</a></li>
+          <ul class="sort">
+            <li><a class="sort-item active-subfilter" href="#">по цене</a></li>
+            <li><a class="sort-item" href="#">по типу</a></li>
+            <li><a class="sort-item" href="#">по рейтингу</a></li>
           </ul>
-        <div>
+        <div class="arrow-section">
           <span class="arrow">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
           </span>
@@ -73,66 +73,57 @@
       </section>
       <section class="result">
         <h2 class="visually-hidden">Список арендуемых домов в городе Седона</h2>
-          <ul>
-            <li>
+        <div class="list-item">
+          <p class="image"><img src="img/amara-hotel.jpg" width="135" height="90" alt="Amara Resort & SPA"></p>
+          <div>
+            <h3><a class="about-name" href="#">AMARA RESORT & SPA</a></h3>
+            <p> Гостиница ОТ 4000 Р.</p>
+            <a class="about-item" href="#">Подробнее</a>
+            <div>
+              <button class="button-reserve" type="button">Забронировать</button>
+            </div>
+          </div>
+          <div>
+            <span><img src="img/star.svg" width="18" height="17" alt="5 stars"></span>
+            <span><img src="img/star.svg" width="18" height="17" alt=""></span>
+            <span><img src="img/star.svg" width="18" height="17" alt=""></span>
+            <span><img src="img/star.svg" width="18" height="17" alt=""></span>
+            <span><img src="img/star.svg" width="18" height="17" alt=""></span>
+            <span class="rating">Рейтинг:8.5</span>
+          </div>
+          <div class="list-item">
+            <p class="image"><img src="img/desert-hotel.jpg" width="135" height="90" alt="Desert Quail Inn"></p>
+            <div>
+              <h3><a class="about-name" href="#">Desert Quail Inn</a></h3>
+              <p> Мотель ОТ 3000 Р.</p>
+              <a class="about-item" href="#">Подробнее</a>
               <div>
-                <p><img src="img/amara-hotel.jpg" width="135" height="90" alt="Amara Resort & SPA"></p>
+                <button class="button-reserve" type="button">Забронировать</button>
               </div>
+            </div>
+            <div>
+              <span><img src="img/star.svg" width="18" height="17" alt="3 stars"></span>
+              <span><img src="img/star.svg" width="18" height="17" alt=""></span>
+              <span><img src="img/star.svg" width="18" height="17" alt=""></span>
+              <span class="rating">Рейтинг:8.9</span>
+            </div>
+          </div>
+          <div class="list-item">
+            <p class="image"><img src="img/villas-hotel.jpg" width="135" height="90" alt="Villas at Poco Diablo"></p>
+            <div>
+              <h3><a class="about-name" href="#">Villas at Poco Diablo</a></h3>
+              <p>Апартаменты ОТ 2000 Р.</p>
+              <a class="about-item" href="#">Подробнее</a>
               <div>
-                <h3><a class="about-name" href="#">AMARA RESORT & SPA</a></h3>
-                <p> Гостиница ОТ 4000 Р.</p>
-                <a class="about-item" href="#">Подробнее</a>
-                <div>
-                  <button class="button-reserve" type="button">Забронировать</button>
-                </div>
+                <button class="button-reserve" type="button">Забронировать</button>
               </div>
-              <div>
-                <span><img src="img/star.svg" width="18" height="17" alt="5 stars"></span>
-                <span><img src="img/star.svg" width="18" height="17" alt=""></span>
-                <span><img src="img/star.svg" width="18" height="17" alt=""></span>
-                <span><img src="img/star.svg" width="18" height="17" alt=""></span>
-                <span><img src="img/star.svg" width="18" height="17" alt=""></span>
-                <span class="rating">Рейтинг:8.5</span>
-              </div>
-            </li>
-            <li>
-              <div>
-                <p><img src="img/desert-hotel.jpg" width="135" height="90" alt="Desert Quail Inn"></p>
-              </div>
-              <div>
-                <h3><a class="about-name" href="#">Desert Quail Inn</a></h3>
-                <p> Мотель ОТ 3000 Р.</p>
-                <a class="about-item" href="#">Подробнее</a>
-                <div>
-                  <button class="button-reserve" type="button">Забронировать</button>
-                </div>
-                </div>
-              <div>
-                <span><img src="img/star.svg" width="18" height="17" alt="3 stars"></span>
-                <span><img src="img/star.svg" width="18" height="17" alt=""></span>
-                <span><img src="img/star.svg" width="18" height="17" alt=""></span>
-                <span class="rating">Рейтинг:8.9</span>
-              </div>
-            </li>
-            <li>
-              <div>
-                <p><img src="img/villas-hotel.jpg" width="135" height="90" alt="Villas at Poco Diablo"></p>
-              </div>
-              <div>
-                <h3><a class="about-name" href="#">Villas at Poco Diablo</a></h3>
-                <p>Апартаменты ОТ 2000 Р.</p>
-                <a class="about-item" href="#">Подробнее</a>
-                <div>
-                  <button class="button-reserve" type="button">Забронировать</button>
-                </div>
-              </div>
-              <div>
-                <span><img src="img/star.svg" width="18" height="17" alt="2 stars"></span>
-                <span><img src="img/star.svg" width="18" height="17" alt=""></span>
-                <span class="rating">Рейтинг:9.2</span>
-              </div>
-            </li>
-        </ul>
+            </div>
+            <div>
+              <span><img src="img/star.svg" width="18" height="17" alt="2 stars"></span>
+              <span><img src="img/star.svg" width="18" height="17" alt=""></span>
+              <span class="rating">Рейтинг:9.2</span>
+            </div>
+          </div>
       </section>
     </main>
     <footer>
