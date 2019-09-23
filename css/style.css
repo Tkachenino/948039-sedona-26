@@ -438,10 +438,27 @@ button.button-reserve:active {
   transform: translateX(-50%) translateY(0%);
   width: 568px;
   background-color: #ffffff;
+  padding: 55px;
+  box-sizing: border-box;
+}
+.popup-form input {
+  width: 308px;
+  margin-left: 22px;
+  padding: 14px 12px;
+  height: 38px;
+  box-sizing: border-box;
+}
+.popup-form input[type="number"] {
+  width: 38px;
+  padding: auto;
 }
 .search {
   width: 458px;
-  min-height: 58px;
+  margin-top: 55px;
+  padding-top: 17px;
+  padding-right: 196px;
+  padding-bottom: 22px;
+  padding-left: 196px;
 }
 .map {
   width: 1200px;
@@ -500,17 +517,10 @@ button.button-reserve:active {
   margin-right:  72px;
 }
 .result {
-  width: 1200px;
   min-height: 450px;
-  margin: 0 auto;
   display: flex;
+  flex-direction: column;
 }
-.list-item{
-  width:1200px;
-  min-height: 150px;
+.list-item {
   display: flex;
-}
-
-.image{
-  margin-left: 72px;
 }
