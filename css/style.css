@@ -354,16 +354,20 @@ a.active-subfilter:active {
   box-sizing: border-box;
 }
 .site-link:nth-of-type(4n-3) {
+  text-align: left;
   padding-left: 72px;
 }
 .site-link:nth-of-type(4n-2) {
+  text-align: left;
    padding-left: 12px;
  }
 .site-link:nth-of-type(4n-1) {
-  padding-left: 200px;
+  text-align: right;
+  padding-right: 12px;
 }
 .site-link:nth-of-type(4n) {
-  padding-left: 149px;
+  text-align: right;
+  padding-right: 72px;
 }
 .intro {
   position: relative;
