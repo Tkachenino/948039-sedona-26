@@ -144,6 +144,8 @@ button.search {
 
   border: 2px solid #81b3d2;
   background-color: #81b3d2;
+
+  cursor: pointer;
 }
 button.search:hover {
   border: 2px solid #669ec0;
@@ -208,20 +210,6 @@ button.search:active {
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
-/*.form-area button.btn-result {
-  color: #ffffff;
-  line-height: 21px;
-  text-transform: uppercase;
-
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-}
-.form-area button:hover {
-  color: #000000;
-
-  background-color: #ffffff;
-}*/
 .subfilter p {
   font-size: 21px;
   line-height: 26px;
@@ -251,6 +239,12 @@ a.active-subfilter:hover,
 a.active-subfilter:active {
   color: #81b3d2;
   border-bottom: none;
+}
+.arrow {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
 }
 .arrow svg {
   fill: #cacaca;
@@ -297,7 +291,7 @@ a.active-subfilter:active {
   color: #666666;
   background-color: #f2f2f2;
 }
-button.button-reserve{
+.button-reserve{
   line-height: 21px;
   font-weight: bold;
   color: #ffffff;
@@ -305,12 +299,14 @@ button.button-reserve{
 
   background-color: #766357;
   border: 2px solid #766357;
+
+  cursor: pointer;
 }
-button.button-reserve:hover {
+.button-reserve:hover {
   background-color: #604e43;
   border: 2px solid #604e43;
 }
-button.button-reserve:active {
+.button-reserve:active {
   color: #928a85;
 
   background-color: #503e33;
@@ -352,16 +348,22 @@ button.button-reserve:active {
   justify-content: space-between;
 }
 .site-link {
-  width: 239px;
-  padding: 15px;
-  text-align: center;
+  width: 25%;
+  height: 56px;
+  padding-top: 13px;
   box-sizing: border-box;
 }
-.site-link:nth-of-type(4n-2) {
-  margin-right: auto;
+.site-link:nth-of-type(4n-3) {
+  padding-left: 72px;
 }
+.site-link:nth-of-type(4n-2) {
+   padding-left: 12px;
+ }
 .site-link:nth-of-type(4n-1) {
-  margin-left: auto;
+  padding-left: 200px;
+}
+.site-link:nth-of-type(4n) {
+  padding-left: 149px;
 }
 .intro {
   position: relative;
@@ -473,6 +475,7 @@ button.button-reserve:active {
   justify-content: center;
   align-items: center;
 
+  cursor: pointer;
 }
 .popup-form {
   position: absolute;
@@ -538,6 +541,8 @@ button.min-button {
   background-color: transparent;
   width: 38px;
   height: 38px;
+
+  cursor: pointer;
 }
 button.minus {
   left: 0px;
@@ -610,15 +615,18 @@ button.pluse {
 .form-area fieldset {
   border: none;
 }
-.checkox label {
+.form-label {
   display: block;
   width: 153px;
   padding-left: 40px;
-  padding-bottom: 23px;
+  padding-bottom: 3px;
+  margin-bottom: 20px;
   box-sizing: border-box;
   position: relative;
+
+  cursor: pointer;
 }
-.checkox label::before {
+.form-label::before {
   content: "";
   position: absolute;
   background-image: url("../img/checkbox-off.svg");
@@ -626,10 +634,10 @@ button.pluse {
   width: 23px;
   height: 23px;
 }
-input:focus + label::before {
+.form-value:focus + .form-label::before {
   outline: 2px solid #81b3d2;
 }
- input:checked + label::before {
+ .form-value:checked + .form-label::before {
   content: "";
   position: absolute;
   background-image: url("../img/checkbox-on.svg");
@@ -637,10 +645,10 @@ input:focus + label::before {
   width: 27px;
   height: 23px;
 }
- input:checked:disabled + label::before {
+ .form-value:checked:disabled + .form-label::before {
    background-image: url("../img/checkbox-on-dis.svg");
  }
-input:disabled + label::before {
+.form-value:disabled + .form-label::before {
   background-image: url("../img/checkbox-off-dis.svg");
 }
 .filter-range {
@@ -734,10 +742,12 @@ input:disabled + label::before {
   border: 8px solid #ffffff;
   border-radius:  50%;
   box-shadow: 0 2px 1px 0 rgba(0,1,1,0.2);
+
+  cursor: pointer;
 }
 .range-toggle:hover {
-  border-width: 9px;
-  background: #1c4f80;
+  transition: 0.3s;
+ transform: scale(1.1);
 }
 .range-toggle-min {
   left: 0;
@@ -757,6 +767,8 @@ input:disabled + label::before {
 
   background: transparent;
   border: 2px solid #ffffff;
+
+  cursor: pointer;
 }
 .btn-transparent:hover {
   color: #000000;
