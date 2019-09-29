@@ -208,7 +208,7 @@ button.search:active {
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
-.form-area button {
+/*.form-area button.btn-result {
   color: #ffffff;
   line-height: 21px;
   text-transform: uppercase;
@@ -221,7 +221,7 @@ button.search:active {
   color: #000000;
 
   background-color: #ffffff;
-}
+}*/
 .subfilter p {
   font-size: 21px;
   line-height: 26px;
@@ -357,8 +357,11 @@ button.button-reserve:active {
   text-align: center;
   box-sizing: border-box;
 }
-.site-link:nth-of-type(2) {
-  margin-right: 244px;
+.site-link:nth-of-type(4n-2) {
+  margin-right: auto;
+}
+.site-link:nth-of-type(4n-1) {
+  margin-left: auto;
 }
 .intro {
   position: relative;
@@ -374,7 +377,7 @@ button.button-reserve:active {
   position: absolute;
   bottom: -5px;
   background-image: url("../img/intro-mask.svg");
-  width: 1200px;
+  width: 100%;
   height: 60px;
 }
 .advantage {
@@ -393,7 +396,6 @@ button.button-reserve:active {
 .intro-text .big-text{
   margin-bottom: 30px;
 }
-
 .info-block h3,
 .info-city h3{
   margin-top: 0;
@@ -503,10 +505,6 @@ button.button-reserve:active {
   padding-right: 38px;
 }
 .input-area button {
-  position: absolute;
-  background-color: transparent;
-  width: 38px;
-  height: 38px;
   right: 0px;
 }
 .input-number {
@@ -535,18 +533,16 @@ input.count {
   padding-left: 38px;
   padding-right: 38px;
 }
-button.minus {
+button.min-button {
   position: absolute;
   background-color: transparent;
   width: 38px;
   height: 38px;
+}
+button.minus {
   left: 0px;
 }
 button.pluse {
-  position: absolute;
-  background-color: transparent;
-  width: 38px;
-  height: 38px;
   right: 0px;
 }
 .search {
@@ -629,6 +625,9 @@ button.pluse {
   left: 0;
   width: 23px;
   height: 23px;
+}
+input:focus + label::before {
+  outline: 2px solid #81b3d2;
 }
  input:checked + label::before {
   content: "";
@@ -728,6 +727,8 @@ input:disabled + label::before {
   top: -9px;
   width: 4px;
   height: 4px;
+  padding: 0;
+  box-sizing: content-box;
 
   background: #ababab;
   border: 8px solid #ffffff;
@@ -735,6 +736,7 @@ input:disabled + label::before {
   box-shadow: 0 2px 1px 0 rgba(0,1,1,0.2);
 }
 .range-toggle:hover {
+  border-width: 9px;
   background: #1c4f80;
 }
 .range-toggle-min {
