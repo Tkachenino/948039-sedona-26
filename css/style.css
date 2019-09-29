@@ -255,7 +255,10 @@ a.active-subfilter:active {
 .arrow svg:active{
   fill: #81b3d2;
 }
-.active-arrow svg {
+.active-arrow svg,
+.active-arrow:hover svg,
+.active-arrow:active svg
+{
   fill: #81b3d2;
 }
 .about-item {
