@@ -72,9 +72,16 @@ text-align: center;
 .mini-bg {
   background-color: #81b3d2;
 }
+.advantage-number {
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
 .advantage {
   text-align: center;
   line-height: 21px;
+}
+.intro-text {
+  line-height: 26px;
 }
 .popup {
   line-height: 24px;
@@ -109,6 +116,7 @@ text-align: center;
   font-weight: bold;
   border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
+  text-transform: uppercase;
 }
 .popup input:hover {
   border: 2px solid #ebebeb;
@@ -192,7 +200,7 @@ button.search:active {
 }
 .form-area legend {
   font-size: 16px;
-  line-height: 26px;
+  line-height: 21px;
   color: #ffffff;
   font-weight: bold;
 }
@@ -353,7 +361,7 @@ a.active-subfilter:active {
 .site-link {
   width: 25%;
   height: 56px;
-  padding-top: 13px;
+  padding-top: 14px;
   box-sizing: border-box;
 }
 .site-link:nth-of-type(4n-3) {
@@ -362,11 +370,11 @@ a.active-subfilter:active {
 }
 .site-link:nth-of-type(4n-2) {
   text-align: left;
-   padding-left: 12px;
+   padding-left: 13px;
  }
 .site-link:nth-of-type(4n-1) {
   text-align: right;
-  padding-right: 12px;
+  padding-right: 16px;
 }
 .site-link:nth-of-type(4n) {
   text-align: right;
@@ -375,7 +383,7 @@ a.active-subfilter:active {
 .intro {
   position: relative;
   padding: 10px;
-  min-height: 506px;
+  min-height: 488px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -384,7 +392,7 @@ a.active-subfilter:active {
 .intro::after {
   content: "";
   position: absolute;
-  bottom: -5px;
+  bottom: -3px;
   background-image: url("../img/intro-mask.svg");
   width: 100%;
   height: 60px;
@@ -397,22 +405,23 @@ a.active-subfilter:active {
 .intro-text {
   width: 100%;
   text-align: center;
-  padding-top: 65px;
+  padding-top: 40px;
   padding-right: 50px;
   padding-left: 50px;
-  padding-bottom: 57px;
- }
+  padding-bottom: 37px;
+}
 .intro-text .big-text{
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 .info-block h3,
 .info-city h3{
   margin-top: 0;
+  margin-bottom: 24px;
 }
 .info-block {
   width: 400px;
   min-height: 256px;
-  padding-top: 50px;
+  padding-top: 47px;
   padding-right: 47px;
   padding-left: 47px;
   padding-bottom: 10px;
@@ -423,7 +432,7 @@ a.active-subfilter:active {
   position: relative;
   width: 400px;
   min-height: 330px;
-  padding-top: 164px;
+  padding-top: 161px;
   box-sizing: border-box;
   padding-right: 47px;
   padding-left: 47px;
@@ -441,41 +450,44 @@ a.active-subfilter:active {
 .info-city::before {
   content: "";
   position: absolute;
-  top: 62px;
   left: 50%;
   transform: translateX(-50%);
 }
 .home::before {
+  top: 60px;
   width: 75px;
   height: 72px;
   background-image: url("../img/icon-1.svg");
 }
 .food::before {
+  top: 61px;
   width: 74px;
   height: 70px;
   background-image: url("../img/icon-3.svg");
 }
 .gift::before {
+  top: 56px;
   width: 64px;
   height: 76px;
   background-image: url("../img/icon-2.svg");
 }
 .search-info {
   text-align: center;
-  padding-top: 58px;
+  padding-top: 50px;
   padding-right: 70px;
   padding-left: 70px;
 }
 .head {
   margin-top: 0px;
+  margin-bottom: 24px;
 }
 .popup {
    position: relative;
 }
 .search-switch {
-  margin: 0 auto;
+  margin: 47px auto 0px;
   text-align: center;
-  padding: 34px 20px;
+  padding: 31px 20px;
   width: 568px;
   box-sizing: border-box;
   display: flex;
@@ -511,7 +523,7 @@ a.active-subfilter:active {
   position: relative;
 }
 .input-area input {
-  padding-left: 12px;
+  padding-left: 10px;
   padding-right: 38px;
 }
 .input-area button {
@@ -527,7 +539,7 @@ a.active-subfilter:active {
   margin-right: 37px;
 }
 .number-child {
-  margin-right: 20px;
+  margin-right: 23px;
 }
 .input-count {
   display: inline-block;
@@ -550,21 +562,22 @@ button.min-button {
   height: 38px;
 
   cursor: pointer;
+
+  font-size: 25px;
 }
 button.minus {
   left: 0px;
+  margin-top: -2px;
 }
 button.pluse {
   right: 0px;
+  margin-top: -1px;
 }
 .search {
   text-align: center;
   width: 458px;
-  margin-top: 55px;
-  padding-top: 17px;
-  padding-right: 20px;
-  padding-bottom: 22px;
-  padding-left: 20px;
+  margin-top: 53px;
+  padding: 14px;
 }
 .map {
   width: 1200px;
@@ -572,7 +585,7 @@ button.pluse {
 }
 .footer-index {
   position: relative;
-  margin-top: -120px;
+  margin-top: -128px;
 }
 .footer {
   min-height: 120px;
@@ -592,6 +605,7 @@ button.pluse {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0px;
+  margin-left: 28px;
 }
 .icon {
   display: flex;
@@ -599,7 +613,7 @@ button.pluse {
   align-items: center;
   width: 46px;
   height: 48px;
-  margin-bottom: 6px;
+  margin-top: 2px;
 }
 .logo-html {
   display: flex;
@@ -611,9 +625,9 @@ button.pluse {
 /* сетка вторая страница*/
 .form-area {
   width: 1200px;
-  box-sizing: border-box;
-  padding: 30px 72px;
   min-height: 217px;
+  padding: 10px;
+  box-sizing: border-box;
   display: flex;
 }
 .form-area ul {
@@ -621,6 +635,12 @@ button.pluse {
 }
 .form-area fieldset {
   border: none;
+  margin-top: 26px;
+  padding: 0px;
+}
+.type-infro {
+}
+.type-apart {
 }
 .form-label {
   display: block;
