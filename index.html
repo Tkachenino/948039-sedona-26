@@ -149,7 +149,27 @@
     </footer>
   </div>
   <script>
+    var switchp = document.querySelector(".search-switch");
+    var popup = document.querySelector(".popup-form");
+    var arrival = popup.querySelector("[name=data-arrival");
+    var depart = popup.querySelector("[name=data-depart");
 
-  </script>
+    switchp.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      if (!popup.classList.contains("hidden")) {
+        popup.classList.add("hidden");
+      }
+      else {
+        popup.classList.remove("hidden");
+      }
+    });
+    popup.addEventListener("submit", function (evt) {
+      if (!arrival.value || !depart.value) {
+        evt.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.classList.add("modal-error");
+      }
+    });
+   </script>
   </body>
 </html>
