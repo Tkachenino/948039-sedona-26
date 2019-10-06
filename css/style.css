@@ -233,9 +233,12 @@ a.active-page:active {
   line-height: 36px;
 }
 .search-switch {
+  position: relative;
+  z-index: 4;
+
   display: flex;
   justify-content: center;
-  margin: 47px auto 0px;
+  margin: 0 auto;
   padding: 31px 20px;
   width: 568px;
   box-sizing: border-box;
@@ -267,9 +270,6 @@ a.active-page:active {
   box-shadow-top: none;
 
   transform: translateX(-50%) translateY(0%);
-}
-.show {
-  display: block;
 }
 .hidden {
   display: none;
@@ -511,8 +511,7 @@ a.active-page:active {
   display: block;
   width: 153px;
   padding-left: 40px;
-  padding-bottom: 3px;
-  margin-top: 22px;
+  margin-top: 25px;
   box-sizing: border-box;
 
 
@@ -902,8 +901,30 @@ a.active-page:active {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.visual-off {
+  animation: swipe-top 1s;
+  animation-fill-mode: forwards;
+}
+.visual-on {
+  animation: swipe-bottom 1s;
+  animation-fill-mode: forwards;
+}
 .modal-error {
-  animation: shake 1s;
+  animation: shake 300ms;
+  animation-fill-mode: backwards;
+}
+@keyframes swipe-top {
+ 100% {
+transform: translate(-50%,-100%);
+}
+}
+@keyframes swipe-bottom {
+  0%{
+    transform: translate(-50%,-100%);
+  }
+  100%{
+    transform: translate(-50%,0%);
+  }
 }
 @keyframes shake {
   0%,
@@ -925,6 +946,12 @@ a.active-page:active {
   80% {
     transform: translateX(-49%);
   }
+}
+.help-for-hidden {
+  position: relative;
+  margin-top: 33px;
+  min-height: 679px;
+  overflow: hidden;
 }
 
 
