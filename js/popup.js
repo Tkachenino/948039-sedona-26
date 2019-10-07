@@ -22,7 +22,9 @@ if (storage1) {
 if (storage2) {
   child.value = storage2;
 }
-
+document.addEventListener("DOMContentLoaded", function () {
+  popup.classList.add("hidden");
+});
 switchp.addEventListener("click", function (evt) {
   evt.preventDefault();
   if (!popup.classList.contains("hidden")) {
